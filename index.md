@@ -29,11 +29,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
-- Technical details of what you've accomplished and how they contribute to the final goal
-- What has been surprising about the project so far
-- Previous challenges you faced that you overcame
-- What needs to be completed before your final milestone 
+For my second milestone, I added a physical robotic arm from one of my past projects to mirror my left arm. First, I had to set up a math function which using code inspired by <a href="https://stackoverflow.com/questions/72601765/calculate-angle-between-two-coordinates-python"> this StackOverflow forum. </a> With these angles, I then send them over to an ESP32 from another one of my past projects, and the ESP32 controls the servos and has them mimic my arm. It is a bit delayed, but it still does a good job of copying my movements. Sometimes it struggles with tracking my wrist because of the lighting, so in the future for my next milestone, I'll add a function that makes it so if it doesn't detect a waypoint, it will not update the servos, along with adding the other three limbs and the code that comes with them. I didn't have any major obstacles for this milestone; some little problems I had were errors with the virtual environment or powering issues, but those were solved by creating a new virtual environment and adding a battery pack, respectively.
 
 # First Milestone
 
@@ -41,7 +37,7 @@ For your second milestone, explain what you've worked on since your previous mil
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0AwXptokzxw" title="Devan G. Milestone 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-For my first milestone, I set up pose estimation using this <a href="https://github.com/ecd1012/rpi_pose_estimation"> code from this Github. </a> The pose estimation uses the TensorFlow PoseNet model to place keypoints on the different joints it tracks, like elbows and knees, and then draws a line through them, giving you the full pose estimation. When implementing it, I  struggled with downloading OpenCV and other libraries as they often wouldn't compile correctly or not even compile at all. In the end, however, like most things, I simply reflashed my Pi and started from a clean slate, where it immediately worked perfectly. It was pretty frustrating as whatever I tried just wasn't working, and I was stuck on the same errors for multiple days until I just wiped my Pi and reuploaded the code.
+For my first milestone, I set up pose estimation using this <a href="https://github.com/ecd1012/rpi_pose_estimation"> code from this Github. </a> The pose estimation uses the TensorFlow PoseNet model to place keypoints on the different joints it tracks, like elbows and knees, and then draws a line through them, giving you the full pose estimation. When implementing it, I  struggled with downloading OpenCV and other libraries as they often wouldn't compile correctly or not even compile at all. In the end, however, like most things, I simply reflashed my Pi and started from a clean slate, where it immediately worked perfectly. It was quite frustrating, as whatever I tried just wasn't working, and I was stuck on the same errors for multiple days until I wiped my Pi and reuploaded the code.
 
 
 # Schematics 
