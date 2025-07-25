@@ -1,5 +1,5 @@
 # Pose Estimation
-Have you ever wondered how bad your posture truly is? Well, wait no longer, as the pose estimator is here to shame you into correcting your posture (as well as many other capabilities)! 
+With a Raspberry Pi and TensorFlow's PoseNet machine learning model, I changed this pose estimator from a purely coding project into a wooden box with two arms attached, which would mimic your arms and legs.
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
