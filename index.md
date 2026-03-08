@@ -1,19 +1,17 @@
 # Pose Estimation
-With a Raspberry Pi and TensorFlow's PoseNet machine learning model, I changed this pose estimator from a purely coding project into a wooden box with two arms attached, which would mimic your arms and legs.
+With a Raspberry Pi and TensorFlow's PoseNet machine learning model, I changed this pose estimator from a purely coding project into a wooden box with two arms attached, which would mimic your arms.
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Devan G | Marin Academy | Electrical Engineering | Incoming Junior
 
-**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
-
 ![Headstone Image](logo.svg)
   
 # Final Milestone
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+(Video Unfinished)
 
-For my final milestone, I got two new robotic arms and stuck them onto a wooden box. It now mirrors both of my arms, tracking them and sending the angles to the ESP32, which has them write to the servos. Because these arms had the largest capacities for movement than my last arm, I had to create a mapping angle function which would turn the possible -180 to +180 degrees into 0-180, adjusting for the servo's  limited movement. I overcomplicated this mapping function a bit because in the end all I needed to do was just add 90* to the arm angle, and it would be adjusted. While installing all of the electronics inside the box, my Raspberry Pi got twisted up, and the Picam broke, meaning I had to make a last-minute adjustment to the code for it to work with a USB webcam. However, in the end, this ended up helping me as the USB webcam was way better at tracking my joints than the Picam and could provide a smoother, faster flask output.
+For my final milestone, I got two new robotic arms and stuck them onto a wooden box. It now mirrors both of my arms, tracking them and sending the angles to the ESP32, which has them write to the servos. Because these arms had the largest capacities for movement than my last arm, I had to create a mapping angle function which would turn the possible -180 to +180 degrees into 0-180, adjusting for the servo's  limited movement. I overcomplicated this mapping function a bit because, in the end, all I needed to do was just add 90* to the arm angle, and it would be adjusted. While installing all of the electronics inside the box, my Raspberry Pi got twisted up, and the Picam broke, meaning I had to make a last-minute adjustment to the code for it to work with a USB webcam. However, in the end, this ended up helping me as the USB webcam was way better at tracking my joints than the Picam and could provide a smoother, faster flask output.
 
 # Second Milestone
 
@@ -23,11 +21,9 @@ For my second milestone, I added a physical robotic arm from one of my past proj
 
 # First Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0AwXptokzxw" title="Devan G. Milestone 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-For my first milestone, I set up pose estimation using this <a href="https://github.com/ecd1012/rpi_pose_estimation"> code from this Github. </a> The pose estimation uses the TensorFlow PoseNet model to place keypoints on the different joints it tracks, like elbows and knees, and then draws a line through them, giving you the full pose estimation. When implementing it, I  struggled with downloading OpenCV and other libraries as they often wouldn't compile correctly or not even compile at all. In the end, however, like most things, I simply reflashed my Pi and started from a clean slate, where it immediately worked perfectly. It was quite frustrating, as whatever I tried just wasn't working, and I was stuck on the same errors for multiple days until I wiped my Pi and reuploaded the code.
+For my first milestone, I set up pose estimation using this <a href="https://github.com/ecd1012/rpi_pose_estimation"> code from this Github. </a> The pose estimation uses the TensorFlow PoseNet model to place keypoints on the different joints it tracks, like elbows and knees, and then draws a line through them, giving you the full pose estimation. When implementing it, I  struggled with downloading OpenCV and other libraries, as they often wouldn't compile correctly or not even compile at all. In the end, however, like most things, I simply reflashed my Pi and started from a clean slate, where it immediately worked perfectly. It was quite frustrating to be on the same error for days only to realize after your latest debugging attempt that you downloaded the wrong installation of PiOS.
 
 
 # Schematics 
