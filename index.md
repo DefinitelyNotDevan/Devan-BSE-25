@@ -31,8 +31,7 @@ For my first milestone, I set up pose estimation using this <a href="https://git
 
 # Code
 Here is the code for the Raspberry Pi
-<div style="max-height: 300px; overflow-y: auto;">
-  
+
 ```python
 import os
 import argparse
@@ -354,7 +353,7 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=False)
 ```
 
-</div>
+
 Here is the code for the ESP32
 
 ```c++
